@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	
+ 
+	<groups> 
+		<run>
+		<include name="regression"></include>
+		<include name="system"></include>
+		<exclude name="smoke"></exclude>
+	</run>
+	</groups> 
+	<!--<listeners>
+		<listener class-name="utilities.Listnerslmpl"></listener>
+		</listeners>-->
+	<test name="Test1" thread-count="1">
+    <classes>
+      <class name="omayo.testcases.CheckBoxMultipleVerify"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
