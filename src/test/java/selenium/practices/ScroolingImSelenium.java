@@ -19,7 +19,7 @@ public class ScroolingImSelenium {
 		driver.manage().window().maximize();
 		JavascriptExecutor js= (JavascriptExecutor)driver;
 		//this method is use to scroll the roller till the end 
-		//js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 		
 		//to scroll vertically down
 		js.executeScript("window.scrollBy(0,1000)","");

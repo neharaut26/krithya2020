@@ -10,12 +10,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class TableDataHandle {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http:/omayo.blogspot.com");
 		driver.manage().window().maximize();
 		List<WebElement> tablealldata=	driver.findElements(By.xpath("//table[@id='table1']//tbody//tr"));
-		List<WebElement> tableheading=	driver.findElements(By.xpath("//table[@id='table1']//thead//tr//th"));
+		List<WebElement> tableheading=	driver.findElements(By.xpath("//table[@id='table1']//thead//tr"));
 		for(WebElement t:tableheading) {
 		System.out.print(t.getText()+" " );
 		}
@@ -23,11 +23,6 @@ public class TableDataHandle {
 	for(WebElement data:tablealldata) {
 		
 		System.out.println(data.getText());
-		List<WebElement> unorderlist=	driver.findElements(By.xpath("//div[@class='widget-content']//ul"));
-		for(WebElement list2:unorderlist) {
-			System.out.println(list2.getText().isEmpty());
-		
-		}
 		
 		
 		

@@ -13,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class WebElementCommand {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
+	//	System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://omayo.blogspot.com/");
 		WebElement searchbox = driver.findElement(By.xpath("//input[@name='q' and @title='search']"));
@@ -41,7 +41,7 @@ public class WebElementCommand {
 	
 		File file=searchbox.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(file,new File("src/test/resources/screenshots/textboxscreenshot.png"));
-		System.out.println(searchbox.getSize().getHeight());
+		System.out.println(searchbox.getSize());
 		System.out.println(searchbox.getSize().getHeight());
 		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("helllo");
 		Thread.sleep(20000);

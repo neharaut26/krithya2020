@@ -19,9 +19,10 @@ public class KeyBoardMultipleActions {
 		driver.get("https://text-compare.com/");
 		driver.manage().window().maximize();
 		WebElement input = driver.findElement(By.xpath("//textarea[@id=\"inputText1\"]"));
+		
 		WebElement input2 = driver.findElement(By.xpath("//textarea[@id=\"inputText2\"]"));
 		//we have to write text in it
-		input.sendKeys("neha kakde");
+		//input.sendKeys("neha kakde");
 		Actions act = new Actions(driver);
 		
 		//we have to select that text and copy that text
@@ -33,6 +34,8 @@ public class KeyBoardMultipleActions {
 			System.out.println("contet is not copied");
 			
 		}
+		
+		
 		driver.close();				
 	}
 

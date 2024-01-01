@@ -92,6 +92,28 @@ public class HomePage {
 		
 		
 	}
+	
+	//this is to check first two boxes
+	public List<WebElement>  getTwoCheckboxes() {
+	List<WebElement> boxes =driver.findElements(By.xpath("//div[@class='widget-content']//input[@name='accessories']"));
+int totalboxes=	boxes.size();
+for(int i =0;i<totalboxes;i++) {
+	if(i<2 && !(boxes.get(i).isSelected())) {
+		boxes.get(i).click();
+	}
+	
+}
+return boxes;
+
+
+
+
+	
+	}
+	public void checkLastTwoCheckboxes() {
+		driver.findElement(By.xpath("//div[@class='widget-content']//input[@name='accessories']"));
+		
+	}
 
 	public void radioButtonThree() throws InterruptedException {
 		List<WebElement> radioButtons = driver.findElements(By.xpath("//div[@class='widget-content']//input[@name='vehicle']"));

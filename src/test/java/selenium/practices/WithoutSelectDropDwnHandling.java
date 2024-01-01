@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class WithoutSelectDropDwnHandling {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.airvistara.com/in/en");
 		driver.manage().window().maximize();
@@ -18,7 +18,7 @@ public class WithoutSelectDropDwnHandling {
 		List<WebElement> countries = driver.findElements(By.xpath("//ul[@id='country-scroll']//li/span"));
 for( WebElement countryname:countries) {
 	System.out.println(countryname.getText());
-	if(countryname.getText().equals("Germany")) {
+	if(countryname.getText().equals("India")) {
 		countryname.click();
 	}
 		

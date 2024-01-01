@@ -18,7 +18,7 @@ public class ParellelExecution {
 WebDriver driver;
 	@BeforeMethod
 	public void SetUp() throws IOException {
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 	 driver = new ChromeDriver();
 		driver.get(Utility.getProperty("url1"));
 
@@ -51,7 +51,7 @@ WebDriver driver;
 
 	@AfterMethod
 	public void closedBrowser() {
-		driver.quit();
+		//driver.quit();
 	
 	}
 }

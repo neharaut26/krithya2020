@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class SynchronizationInSelenium {
 
 	public static void main(String[] args) {
-	System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
+	//System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 	WebDriver driver= new ChromeDriver();
 	driver.get("http:/omayo.blogspot.com/");
 	driver.manage().window().maximize();

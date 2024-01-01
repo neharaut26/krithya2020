@@ -1,25 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-22T23:44:19 IST" name="Suite" finished-at="2023-08-22T23:44:30 IST" duration-ms="10575">
+  <suite started-at="2023-12-30T16:11:34 IST" name="Default suite" finished-at="2023-12-30T16:11:53 IST" duration-ms="19258">
     <groups>
     </groups>
-    <test started-at="2023-08-22T23:44:19 IST" name="Test" finished-at="2023-08-22T23:44:30 IST" duration-ms="10575">
-      <class name="omayo.testcases.CheckBoxMultipleVerify">
-        <test-method is-config="true" signature="launchingUrl()[pri:0, instance:omayo.testcases.CheckBoxMultipleVerify@750e2b97]" started-at="2023-08-22T23:44:19 IST" name="launchingUrl" finished-at="2023-08-22T23:44:29 IST" duration-ms="10152" status="PASS">
+    <test started-at="2023-12-30T16:11:34 IST" name="Default test" finished-at="2023-12-30T16:11:53 IST" duration-ms="19258">
+      <class name="com.testcases.TestCases">
+        <test-method is-config="true" signature="launchinUrl()[pri:0, instance:com.testcases.TestCases@6c1a5b54]" started-at="2023-12-30T16:11:34 IST" name="launchinUrl" finished-at="2023-12-30T16:11:44 IST" duration-ms="10328" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchingUrl -->
-        <test-method signature="verifyAllBOxesGetCheckOrNot()[pri:0, instance:omayo.testcases.CheckBoxMultipleVerify@750e2b97]" started-at="2023-08-22T23:44:29 IST" name="verifyAllBOxesGetCheckOrNot" finished-at="2023-08-22T23:44:30 IST" duration-ms="343" status="PASS">
+        </test-method> <!-- launchinUrl -->
+        <test-method signature="verifyInputBox()[pri:0, instance:com.testcases.TestCases@6c1a5b54]" started-at="2023-12-30T16:11:44 IST" name="verifyInputBox" finished-at="2023-12-30T16:11:44 IST" duration-ms="153" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.testcases.TestCases.verifyInputBox(TestCases.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAllBOxesGetCheckOrNot -->
-        <test-method is-config="true" signature="BrowserClose()[pri:0, instance:omayo.testcases.CheckBoxMultipleVerify@750e2b97]" started-at="2023-08-22T23:44:30 IST" name="BrowserClose" finished-at="2023-08-22T23:44:30 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyInputBox -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testcases.TestCases@6c1a5b54]" started-at="2023-12-30T16:11:44 IST" name="tearDown" finished-at="2023-12-30T16:11:44 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BrowserClose -->
-      </class> <!-- omayo.testcases.CheckBoxMultipleVerify -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchinUrl()[pri:0, instance:com.testcases.TestCases@6c1a5b54]" started-at="2023-12-30T16:11:44 IST" name="launchinUrl" finished-at="2023-12-30T16:11:53 IST" duration-ms="8674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchinUrl -->
+        <test-method signature="verifyTitle()[pri:0, instance:com.testcases.TestCases@6c1a5b54]" started-at="2023-12-30T16:11:53 IST" name="verifyTitle" finished-at="2023-12-30T16:11:53 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testcases.TestCases@6c1a5b54]" started-at="2023-12-30T16:11:53 IST" name="tearDown" finished-at="2023-12-30T16:11:53 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testcases.TestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

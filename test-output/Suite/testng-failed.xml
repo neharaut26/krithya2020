@@ -1,44 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="com.testcases.DataDriven">
-        <methods>
-          <include name="closedBrowser"/>
-          <include name="launching"/>
-          <include name="dataDrivenn"/>
-        </methods>
-      </class> <!-- com.testcases.DataDriven -->
-      <class name="com.testcases.SoftAssertion">
-        <methods>
-          <include name="softAssertion"/>
-        </methods>
-      </class> <!-- com.testcases.SoftAssertion -->
-      <class name="com.testcases.TestCases">
-        <methods>
-          <include name="pageVerify"/>
-        </methods>
-      </class> <!-- com.testcases.TestCases -->
-      <class name="com.testcases.HardAssert">
-        <methods>
-          <include name="hardAssertion"/>
-        </methods>
-      </class> <!-- com.testcases.HardAssert -->
       <class name="com.testcases.ParellelExecution">
         <methods>
           <include name="SetUp"/>
           <include name="closedBrowser"/>
-          <include name="dataDrivenn"/>
-          <include name="verifyTitle"/>
           <include name="tablecontent"/>
         </methods>
       </class> <!-- com.testcases.ParellelExecution -->
-      <class name="com.testcases.Demo">
-        <methods>
-          <include name="dataUser"/>
-        </methods>
-      </class> <!-- com.testcases.Demo -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

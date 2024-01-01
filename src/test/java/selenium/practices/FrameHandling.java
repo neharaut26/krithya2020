@@ -12,11 +12,12 @@ import java.io.IOException;
 public class FrameHandling {
 
 	public static void main(String[] args) throws IOException {
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
+	//	System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get(Utility.getProperty("url"));
 		driver.manage().window().maximize();
-	//	this is use to go under fram
+	//	this is use to go under frame
+		
 		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@id='navbar-iframe']")));
 		
 		

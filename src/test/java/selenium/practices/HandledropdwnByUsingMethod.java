@@ -26,7 +26,7 @@ public class HandledropdwnByUsingMethod {
 	}
 
 	public WebDriver methodDriver() {
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		return driver;
 		//driver.get("http://omayo.blogspot.com/");

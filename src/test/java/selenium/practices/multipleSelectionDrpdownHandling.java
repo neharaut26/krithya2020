@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.Select;
 public class multipleSelectionDrpdownHandling {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("wevdriver.chrome.driver", "src/test/resources/chromedriver.exe");
+	//		System.setProperty("wevdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http:/omayo.blogspot.com");
 		driver.manage().window().maximize();

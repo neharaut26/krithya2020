@@ -15,7 +15,7 @@ public class BaseCode {
 	@BeforeMethod
 public WebDriver launchingUrl() throws IOException {
 	//System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
-	 driver= new EdgeDriver();
+	 driver= new ChromeDriver();
 	driver.get(Utility.getProperty("url"));
 	driver.manage().window().maximize();
 	return driver;

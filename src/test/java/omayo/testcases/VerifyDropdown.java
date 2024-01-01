@@ -20,5 +20,6 @@ public void verifydropdown() {
 		String[] options= {"Volvo","Swift"};
 	ArrayList<String> selectedOptions= Utility.dropdownSelectorAndOptions(home.multiselectdropdownlocator(),options);
 	assertEquals(selectedOptions, Arrays.asList("volvo","Swift"));
+	
 }
 }

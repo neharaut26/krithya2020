@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="omayo.testcases.VerifyPageNavigation">
+      <class name="com.testcases.TestCases">
         <methods>
-          <include name="navigateToOtherPage"/>
-          <include name="launchingUrl"/>
-          <include name="BrowserClose"/>
+          <include name="verifyInputBox"/>
+          <include name="launchinUrl"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- omayo.testcases.VerifyPageNavigation -->
+      </class> <!-- com.testcases.TestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
